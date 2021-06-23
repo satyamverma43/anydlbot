@@ -5,9 +5,9 @@ from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, Inl
 async def start(client, message):
     # return
     joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("JOIN", url="https://t.me/TGBotsCollection")],
+        [InlineKeyboardButton("JOIN", url="https://t.me/CodeToStudy")],
         [InlineKeyboardButton(
-            "Try", url="https://t.me/TGBotsCollectionbot")]
+            "Try", url="https://t.me/CodeToStudy")]
     ])
     welcomed = f"Hey <b>{message.from_user.first_name}</b>\nThis is Multipurpose Bot that can perform many functions.\n\n/help for More info"
     await message.reply_text(welcomed, reply_markup=joinButton)
