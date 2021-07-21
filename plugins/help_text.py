@@ -65,7 +65,7 @@ async def start(bot, update):
     TRChatBase(update.from_user.id, update.text, "/start")
     await update.reply(f"<b>Hii {update.chat.first_name}!</b>\nThis is a Telegram Multipurpose Bot Which can do many functions. /help for more details...  ",reply_markup=InlineKeyboardMarkup(
             [
-                    InlineKeyboardButton('JOIN', url='https://t.me/TGBotsCollection')
+                    InlineKeyboardButton('JOIN', url='https://t.me/whatstarwebshow')
                 ]
         )
     )
